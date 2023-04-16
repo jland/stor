@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Os comentários são elementos que abrem com o TAG !--. Servem para explicação do código e são ignorados pelo computador. O espaço antes das linhas, indentação, é uma forma de organização para quem programa, não fazem diferença para os computadores, mas ter um código bem arrumado ajuda a perceber como está construído e onde estão os elementos pais e filhos. -->
+	<meta charset="UTF-8">
+	<meta name="KEYWORDS" content="Palavras chave do assunto do site para os motores de busca">
+	<meta name="DESCRIPTION" content="Descrição que aparece nos motores de busca">
+	<title>Titulo da página - aparece no separador do browser</title>
+</head>
+<body ondragstart="return false" onselectstart="return false">
+
+	<!-- Header -->
+	<table width="940px" bgcolor="CornflowerBlue" align="center">
+		<tr>
+			<td>
+				<h1>&ensp;A minha página web</h1>
+			</td>
+			<td>
+				<nav>
+					<ul>
+						<li><a href="#about">Acerca</a></li>
+						<li><a href="#services">Serviços</a></li>
+						<li><a href="#gallery">Galeria</a></li>
+						<li><a href="#contact">Contactos</a></li>
+					</ul>
+				</nav>
+			</td>
+		</tr>
+	</table>
+
+	<!-- Main Content -->
+	<table width="800px" align="center">
+		<tr>
+			<td colspan="2">
+				<section id="about">
+					<h2>Acerca</h2>
+					<p>Este texto é um Lorem ipsum, um texto de preenchimento (placeholder) que partilha algumas características com um texto escrito real, mas é aleatório ou gerado automáticamente. Ele pode ser usado para exibir o espaço a ser preenchido e os tipos de fontes. Não precisas copiar o páragrafo Lorem ipsum, existem geradores de lorem ipsum na internet. Pesquisa no google e copia o primeiro o páragrafo para completar a tua cópia. <br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus libero vitae lectus aliquet, ac porta mi facilisis. Duis at risus vitae orci placerat sollicitudin in ut lectus. Suspendisse vel faucibus ante. Cras consequat ligula ut posuere consequat. Vestibulum placerat eros dui, in posuere lorem efficitur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut gravida sem, et hendrerit erat. Nunc quis sapien sit amet lorem viverra convallis. Sed et erat luctus, scelerisque felis vitae, porttitor tortor. Curabitur egestas venenatis libero, eget auctor velit varius vel. Phasellus semper venenatis quam, et sodales diam sollicitudin non. Donec egestas ac lacus eget aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla nisi dui, varius sed iaculis vitae, luctus tincidunt libero. Nulla facilisi.
+					</p>
+				</section>
+			</td>
+		</tr>
+		<tr bgcolor="LightSalmon">
+			<td>
+				<section id="services">
+					<h2>Serviços</h2>
+					<ul>
+						<li>Serviço 1</li>
+						<li>Serviço 2</li>
+						<li>Serviço 3</li>
+						<li>Serviço 4</li>
+					</ul>
+				</section>
+			</td>
+			<td>
+				<section id="gallery">
+					<h2>Galeria</h2>
+					<img width="100px" src="img1.jpg" alt="Imagem 1">
+					<img width="100px" src="img2.jpg" alt="Imagem 2">
+					<img width="100px" src="img3.jpg" alt="Imagem 3">
+					<img width="100px" src="img4.jpg" alt="Imagem 4">
+					<img width="100px" src="img5.png" alt="Imagem 5">
+					<img width="100px" src="img6.png" alt="Imagem 6">
+				</section>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<section id="contact">
+					<h2>Contactos</h2>
+					<form action="mailto:nome@email.com" method="POST">
+						<table>
+							<tr>
+								<td><label for="name">Nome</label></td>
+								<td><input type="text" name="name"></td>
+							</tr>
+							<tr>
+								<td><label for="email">Email</label></td>
+								<td><input type="email" name="email"></td>
+							</tr>
+							<tr>
+                    <td><label for="message">Mensagem</label></td>
+                    <td><textarea name="message" rows="5"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="submit" value="Enviar"></td>
+                  </tr>
+                </table>
+              </form>
+            </section>
+          </td>
+        </tr>
+      </table>
+	  <br><br>
+      <!-- Footer -->
+      <table width="940px" bgcolor="CornflowerBlue" align="center">
+        <tr>
+          <td>
+            <footer align="center">
+              <p>Site criado por ...</p>
+            </footer>
+          </td>
+        </tr>
+      </table>
+
+    </body>
+    </html>
