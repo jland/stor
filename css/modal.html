@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Os comentários são elementos que abrem com o TAG !--. Servem para explicação do código e são ignorados pelo computador. O espaço antes das linhas, indentação, é uma forma de organização para quem programa, não fazem diferença para os computadores, mas ter um código bem arrumado ajuda a perceber como está construído e onde estão os elementos pais e filhos. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="KEYWORDS" content="Palavras chave do assunto do site para os motores de busca">
+	<meta name="DESCRIPTION" content="Descrição que aparece nos motores de busca">
+	<title>Titulo da página - aparece no separador do browser</title>
+  <style>
+    /* Global styles */
+    body {
+      margin-left: 50%;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #6495ED;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0 0 0 12%;
+    }
+
+    /* Navigation styles */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12%;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #FFA07A;
+    }
+
+    /* Main styles */
+    main {
+      padding: 20px;
+      width: 50%;
+      margin: 0 auto 0 auto;
+    }
+
+    main h2 {
+      margin-top: 0;
+    }
+
+    main p {
+      line-height: 1.5;
+    }
+
+    /* Image gallery styles */
+    .image-gallery {
+      background-color: #FFA07A;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .image-gallery img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+	  cursor: pointer; // alteramos o cursor porque não tem link, a ação é feita por Javascript, e queremos que percebam as imagens como clicáveis.
+    }
+
+    /* Contact form styles */
+    #contact{
+      margin-top: 20px;
+    }
+
+    .contact-form {
+      margin-top: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #6495ED;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-left: 90%;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #6495ED;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+	
+	/* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; // a imagem vai ficar com o tamanho da caixa, garantir que a resolução é superior.
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    display: block;
+    margin: 10% auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>A minha página web</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section id="about">
+      <h2>Acerca</h2>
+      <p>Este texto é um Lorem ipsum, um texto de preenchimento (placeholder) que partilha algumas características com um texto escrito real, mas é aleatório ou gerado automáticamente. Ele pode ser usado para exibir o espaço a ser preenchido e os tipos de fontes. Não precisas copiar o páragrafo Lorem ipsum, existem geradores de lorem ipsum na internet. Pesquisa no google e copia o primeiro o páragrafo para completar a tua cópia. <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus libero vitae lectus aliquet, ac porta mi facilisis. Duis at risus vitae orci placerat sollicitudin in ut lectus. Suspendisse vel faucibus ante. Cras consequat ligula ut posuere consequat. Vestibulum placerat eros dui, in posuere lorem efficitur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut gravida sem, et hendrerit erat. Nunc quis sapien sit amet lorem viverra convallis. Sed et erat luctus, scelerisque felis vitae, porttitor tortor. Curabitur egestas venenatis libero, eget auctor velit varius vel. Phasellus semper venenatis quam, et sodales diam sollicitudin non. Donec egestas ac lacus eget aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla nisi dui, varius sed iaculis vitae, luctus tincidunt libero. Nulla facilisi.</p>
+    </section>
+
+    <section id="services">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Serviço 1</li>
+        <li>Serviço 2</li>
+        <li>Serviço 3</li>
+        <li>Serviço 4</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+	  <h2>Galeria</h2>
+		  <div class="image-gallery">
+			<img src="img1.jpg" alt="Image 1" onclick="openModal('img1.jpg', 'Image 1 description')">
+			<img src="img2.jpg" alt="Image 2" onclick="openModal('img2.jpg', 'Image 2 description')">
+			<img src="img3.jpg" alt="Image 3" onclick="openModal('img3.jpg', 'Image 3 description')">
+			<img src="img4.jpg" alt="Image 4" onclick="openModal('img4.jpg', 'Image 4 description')">
+			<img src="img5.png" alt="Image 5" onclick="openModal('img5.png', 'Image 5 description')">
+			<img src="img6.png" alt="Image 6" onclick="openModal('img6.png', 'Image 6 description')">
+		  </div>
+
+  <!-- Modal -->
+	  <div id="modal" class="modal">
+		<div class="modal-content">
+		  <span class="modal-close" onclick="closeModal()">&times;</span>
+		  <img id="modal-image" src="" alt="">
+		  <p id="modal-description"></p>
+		</div>
+	  </div>
+	</section>
+
+    <section id="contact">
+      <h2>Contactos</h2>
+      <form class="contact-form" action="https://airform.io/your@email.com" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Site criado por ...</p>
+  </footer>
+  
+  <script>
+  // Open the modal and set the image source and description
+  function openModal(imageSrc, description) {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-image').src = imageSrc;
+    document.getElementById('modal-description').innerText = description;
+  }
+
+  // Close the modal
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal-image').src = '';
+    document.getElementById('modal-description').innerText = '';
+  }
+</script>
+
+</body>
+</html>
